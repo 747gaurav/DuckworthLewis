@@ -4,8 +4,18 @@ package com.gm.dl.modal.dlresourcetab;
 
 public class OneDayDLData extends AbsDLData {
 
+	private static OneDayDLData instance;
 	
-	OneDayDLData()
+	public static OneDayDLData getInstance()
+	{
+		if(instance == null)
+		{
+			instance = new OneDayDLData();;
+		}
+		return instance;		
+	}
+	
+	private OneDayDLData()
 	{
 		avrage = 225;
 		resorceMatrix = new float[][]{

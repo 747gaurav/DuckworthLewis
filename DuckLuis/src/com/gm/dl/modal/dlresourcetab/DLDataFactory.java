@@ -6,7 +6,7 @@ public class DLDataFactory {
 		AbsDLData ret = null;
 		switch(gameType){
 		case 50:
-			ret = new OneDayDLData();
+			ret = OneDayDLData.getInstance();
 			break;
 		case 20:
 			ret = new TTwentyDLData();
