@@ -4,5 +4,5 @@ import com.gm.dl.common.InningData;
 import com.gm.dl.common.TargetResult;
 
 public interface ModalToControllerInterface {
-	TargetResult getTarget(final int maxOvers, final InningData inning1, final InningData inning2);
+	TargetResult getTarget(final InningData inning1, final InningData inning2);
 }

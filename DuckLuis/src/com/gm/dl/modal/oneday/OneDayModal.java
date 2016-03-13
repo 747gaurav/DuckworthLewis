@@ -1,11 +1,10 @@
-package com.gm.dl.modal;
-
+package com.gm.dl.modal.oneday;
 
 import com.gm.dl.common.InningData;
 import com.gm.dl.common.TargetResult;
 import com.gm.dl.modal.iterface.ModalToControllerInterface;
 
-public abstract class AbstractModal implements ModalToControllerInterface {
+public class OneDayModal implements ModalToControllerInterface {
 
 	@Override
 	public TargetResult getTarget(InningData inning1,
